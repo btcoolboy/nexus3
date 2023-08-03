@@ -3,7 +3,7 @@ version: '3.9'
 services:
   nexus3:
     container_name: nexus3
-    image: registry-docker.cloud.lab/sonatype/nexus3:3.52.0
+    image: registry-docker.cloud.lab/sonatype/nexus3:3.58.1
     volumes:
       - /nexus-data:/nexus-data
     ports:
