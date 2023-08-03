@@ -12,6 +12,8 @@ services:
       - "0.0.0.0:8083:8083"
       - "0.0.0.0:8084:8084"
       - "0.0.0.0:8085:8085"
+    networks:
+      - net
     deploy:
       resources:
         limits:
@@ -42,3 +44,7 @@ services:
       resources:
         limits:
           memory: 512M
+
+networks:
+  net:
+    driver: bridge
