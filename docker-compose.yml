@@ -3,7 +3,7 @@ version: '3.9'
 services:
   nexus3:
     container_name: nexus3
-    image: registry-docker.cloud.lab/sonatype/nexus3:3.58.1
+    image: registry-docker.cloud.lab/sonatype/nexus3:3.60.0
     volumes:
       - /nexus-data:/nexus-data
     ports:
@@ -34,7 +34,7 @@ services:
     restart: always
   portainer_agent:
     container_name: portainer_agent
-    image: registry-docker.cloud.lab/portainer/agent:2.19.0
+    image: registry-docker.cloud.lab/portainer/agent:2.19.1
     volumes:
       - /var/lib/docker/volumes:/var/lib/docker/volumes
       - /var/run/docker.sock:/var/run/docker.sock
