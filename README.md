@@ -5,18 +5,6 @@ registry-docker.cloud.lab
 ```
 
 ```
-registry-quay.cloud.lab
-  quay-group (8083):
-  - quay-proxy
-```
-
-```
-registry-k8s.cloud.lab
-  k8s-group (8084):
-  - k8s-proxy
-```
-
-```
 upload-docker.cloud.lab
   docker-hosted (8085)
 ```
